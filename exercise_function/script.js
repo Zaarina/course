@@ -1,0 +1,3 @@
+function heihei() {
+  return "hei";
+}
