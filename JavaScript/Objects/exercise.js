@@ -45,7 +45,7 @@ var passwordPropmt = prompt("Enter your password");
 
 signIn(usernamePrompt, passwordPropmt);
 
-function isUserValid(username, password) {
+function isUserValid() {
     for (var i = 0; i < database.length; i++) {
         if (database[i].username === usernamePrompt && database[i].password === passwordPropmt) {
             return true;
@@ -53,8 +53,8 @@ function isUserValid(username, password) {
     } return false;
 }
 
-function signIn(username, password) {
-    if (isUserValid(username, password)) {
+function signIn() {
+    if (isUserValid()) {
         console.log(newsfeed);
     } else alert("Wrong username or password!");
 }

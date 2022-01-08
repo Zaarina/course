@@ -25,3 +25,4 @@ console.log(array.reverse());
 var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 // access "Oranges".
 console.log(array2[1][1][0]); 
+
