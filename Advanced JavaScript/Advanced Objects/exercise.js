@@ -23,15 +23,18 @@ class Animal {
         this.type = type; 
         this.color = color;
     }
-    sound() {
-        console.log(`Moo Im ${this.name} and im a ${this.type}. My color is ${this.color}`)
-    }
+    
 }
 class Mamal extends Animal {
     constructor(name, type, color) {
         super(name, type, color)
     }
-    
+    sound() {
+        console.log(`Moo Im ${this.name} and im a ${this.type}. My color is ${this.color}`)
+    }
 }
 
-const cow = new Animal(`Shelly`, `cow`, `brown`);
+const cow = new Mamal(`Shelly`, `cow`, `brown`);
+const mamalAnimal = new Mamal('yolo', 'mamalCow', 'white')
+
+mamalAnimal.sound();
